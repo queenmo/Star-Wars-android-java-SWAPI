@@ -67,6 +67,16 @@ public class HomepageActivity extends AppCompatActivity {
             }
         });
 
+        species = findViewById(R.id.species);
+        species.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(HomepageActivity.this,SpeciesActivity.class));
+
+            }
+        });
+
     }
 
 }

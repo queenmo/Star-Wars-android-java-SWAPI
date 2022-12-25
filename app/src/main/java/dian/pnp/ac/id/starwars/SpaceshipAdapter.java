@@ -24,7 +24,7 @@ public class SpaceshipAdapter extends RecyclerView.Adapter<SpaceshipAdapter.Recy
     @NonNull
     @Override
     public RecyclerHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.list_item, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.list_item_spaceship, parent, false);
         return new RecyclerHolder(view);
     }
 

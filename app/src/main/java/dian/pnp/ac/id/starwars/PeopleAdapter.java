@@ -24,7 +24,7 @@ public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.RecyclerHo
     @NonNull
     @Override
     public RecyclerHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.list_item, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.list_item_people, parent, false);
         return new RecyclerHolder(view);
     }
 
@@ -40,16 +40,16 @@ public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.RecyclerHo
         String Birth_year = peopleModel.getBirth_year();
         String Gender = peopleModel.getGender();
 
-        System.out.println("Name: " + Name);
-        System.out.println("Height: " + Height);
-
+        System.out.println("Name: "+Name);
+        System.out.println("Height: "+Height);
 
         holder.tv1.setText(Name);
         holder.tv2.setText(Height);
-        holder.tv3.setText(Mass);
-        holder.tv4.setText(Skin_color);
-        holder.tv5.setText(Birth_year);
-        holder.tv6.setText(Gender);
+        holder. tv3.setText(Mass);
+        holder. tv4.setText(Skin_color);
+        holder. tv5.setText(Birth_year);
+        holder. tv6.setText(Gender);
+
 
 
     }
@@ -79,5 +79,4 @@ public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.RecyclerHo
 
         }
     }
-
 }

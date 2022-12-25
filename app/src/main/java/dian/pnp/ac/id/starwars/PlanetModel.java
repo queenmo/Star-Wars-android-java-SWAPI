@@ -3,6 +3,7 @@ package dian.pnp.ac.id.starwars;
 import com.google.gson.annotations.SerializedName;
 
 public class PlanetModel {
+
     @SerializedName("name")
     private String name;
 

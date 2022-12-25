@@ -11,12 +11,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class PlanetAdapter extends RecyclerView.Adapter<PlanetAdapter.RecyclerHolder> {
+public class SpeciesAdapter extends RecyclerView.Adapter<SpeciesAdapter.RecyclerHolder> {
 
     private Context context;
-    public ArrayList<PlanetModel> dataArrayList;
+    public ArrayList<SpeciesModel> dataArrayList;
 
-    public PlanetAdapter(Context context, ArrayList<PlanetModel> dataArrayList) {
+    public SpeciesAdapter(Context context, ArrayList<SpeciesModel> dataArrayList) {
         this.context = context;
         this.dataArrayList = dataArrayList;
     }
@@ -24,32 +24,31 @@ public class PlanetAdapter extends RecyclerView.Adapter<PlanetAdapter.RecyclerHo
     @NonNull
     @Override
     public RecyclerHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.list_item_planet, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.list_item_species, parent, false);
         return new RecyclerHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerHolder holder, int position) {
 
-        PlanetModel planetModel = dataArrayList.get(position);
+        SpeciesModel speciesModel = dataArrayList.get(position);
 
-        String Name = planetModel.getName();
-        String Rotation_period = planetModel.getRotation_period();
-        String Orbital_period = planetModel.getOrbital_period();
-        String Diameter = planetModel.getDiameter();
-        String Climate = planetModel.getClimate();
-        String Gravity = planetModel.getGravity();
+        String Name = speciesModel.getName();
+        String Classification = speciesModel.getClassification();
+        String Designation = speciesModel.getDesignation();
+        String Average_height = speciesModel.getAverage_height();
+        String Skin_colors = speciesModel.getSkin_colors();
+        String Average_lifespan = speciesModel.getAverage_lifespan();
 
         System.out.println("Name: "+Name);
-        System.out.println("Rotation period: "+Rotation_period);
+        System.out.println("Classification: "+Classification);
 
         holder.tv1.setText(Name);
-        holder.tv2.setText(Rotation_period);
-        holder. tv3.setText(Orbital_period);
-        holder. tv4.setText(Diameter);
-        holder. tv5.setText(Climate);
-        holder. tv6.setText(Gravity);
-
+        holder.tv2.setText(Classification);
+        holder. tv3.setText(Designation);
+        holder. tv4.setText(Average_height);
+        holder. tv5.setText(Skin_colors);
+        holder. tv6.setText(Average_lifespan);
 
     }
 
@@ -60,7 +59,6 @@ public class PlanetAdapter extends RecyclerView.Adapter<PlanetAdapter.RecyclerHo
             return dataArrayList.size();
         }
     }
-
 
     class RecyclerHolder extends RecyclerView.ViewHolder {
 

@@ -8,7 +8,7 @@ public class PeopleModel {
     private String name;
 
     @SerializedName("height")
-    String height;
+    private String height;
 
     @SerializedName("mass")
     private String mass;

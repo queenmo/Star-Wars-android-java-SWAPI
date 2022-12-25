@@ -16,36 +16,71 @@
         android:background="@color/black">
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            />
+        <TextView
             android:id="@+id/tv1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="1dp"
             android:textColor="@color/yellow"
             android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model: "
+            />
         <TextView
             android:id="@+id/tv2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="1dp"
             android:textColor="@color/yellow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manufacturer: "
+            />
         <TextView
             android:id="@+id/tv3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="1dp"
             android:textColor="@color/yellow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Max Atmosphering Speed: "
+            />
         <TextView
             android:id="@+id/tv4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="1dp"
             android:textColor="@color/yellow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crew: "
+            />
         <TextView
             android:id="@+id/tv5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="1dp"
             android:textColor="@color/yellow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passengers: "
+            />
         <TextView
             android:id="@+id/tv6"
             android:layout_width="match_parent"

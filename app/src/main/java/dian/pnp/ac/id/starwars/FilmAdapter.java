@@ -24,21 +24,21 @@ public class FilmAdapter extends RecyclerView.Adapter<FilmAdapter.RecyclerHolder
     @NonNull
     @Override
     public RecyclerHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.list_item, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.list_item_film, parent, false);
         return new RecyclerHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerHolder holder, int position) {
 
-        FilmModel modelData = dataArrayList.get(position);
+        FilmModel filmModel = dataArrayList.get(position);
 
-        String Title = modelData.getTitle();
-        String Episode_id = modelData.getEpisode_id();
-        String Opening_crawl = modelData.getOpening_crawl();
-        String Director = modelData.getDirector();
-        String Producer = modelData.getProducer();
-        String Release_date = modelData.getRelease_date();
+        String Title = filmModel.getTitle();
+        String Episode_id = filmModel.getEpisode_id();
+        String Opening_crawl = filmModel.getOpening_crawl();
+        String Director = filmModel.getDirector();
+        String Producer = filmModel.getProducer();
+        String Release_date = filmModel.getRelease_date();
 
         System.out.println("Title: "+Title);
         System.out.println("Episode id: "+Episode_id);
